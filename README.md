@@ -7,9 +7,17 @@ This repository includes an **experimental** color scheme file for Vim.
 
 ## Features
 
-* A light theme
-* Includes colorscheme file for [lightline.vim](https://github.com/itchyny/lightline.vim)
-* Customization via colorscheme [generator script](src/inkstained.py) written in Python
+* A light theme (`inkstained`) and a dark theme (`inkstained-dark`)
+* Includes colorscheme files for [lightline.vim](https://github.com/itchyny/lightline.vim)
+* Customization via colorscheme generator scripts ([light](src/inkstained.py), [dark](src/inkstained-dark.py)) written in Python
+
+
+## Usage
+
+```viml
+colorscheme inkstained        " light
+colorscheme inkstained-dark   " dark
+```
 
 
 ## Installation
@@ -35,6 +43,8 @@ let g:lightline = {
       \ 'subseparator': { 'left': '', 'right': '' },
       \ }
 ```
+
+For the dark theme use `'inkstained_dark'` (lightline colorscheme names cannot contain a dash, so the underscore form pairs with the `inkstained-dark` colorscheme).
 
 
 ## Contribution
